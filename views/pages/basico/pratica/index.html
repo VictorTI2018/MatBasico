@@ -1,0 +1,52 @@
+<section class="container mt-4">
+    <h5 class="text-center mt-2 mb-3">Aqui temos um formulario para você brincar com os exemplos</h5>
+    <div class="d-flex flex-row justify-content-around">
+        <div class="col-md-6">
+            <div class="card shadow-lg ">
+                <div class="card-header">
+                    Calculo Básico
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="operacao">
+
+                                    <select name="operacao" id="operacao" class="form-control">
+                                        <option value="+">Somar</option>
+                                        <option value="-">Subtrair</option>
+                                        <option value="*">Multiplicar</option>
+                                        <option value="/">Dividir</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="d-flex flex-column">
+                                    <div class="form-group">
+                                        <label for="valor1">1° Valor</label>
+                                        <input type="number" name="valor1" id="valor1" placeholder="Exemplo: 1234 ou 1,23" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="valor2">2° Valor</label>
+                                        <input type="number" name="valor2" id="valor2" placeholder="Exemplo: 1234 ou 1,23" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <button class="btn btn-danger btn-block" onclick="clearAula01()">Limpar</button>
+                        </div>
+                        <div class="col-md-7">
+                            <button class="btn btn-primary btn-block" aula01>Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" id="resultado"></div>
+    </div>
+</section>
